@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Áo cu chì",
+        "status": true
+    },
+    {
+        "id": 2,
+        "name": "Quần đôn chề",
+        "status": true
+    }
+]

@@ -1,0 +1,33 @@
+<form [formGroup]="formData" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Tên sản phẩm</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            formControlName="name">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">price sản phẩm</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            formControlName="price">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Chọn danh mục</label>
+        <div class="form-group">
+            <select class="form-control" name="" id="" formControlName="category_id">
+
+                <option *ngFor="let item of listCate" value="{{item.id}}">{{item.name}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Ảnh sản phẩm</label>
+        <input type="file" class="form-control" id="exampleInputPassword1" (change)="changeImage($event)">
+        <img src="{{image}}" alt="">
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

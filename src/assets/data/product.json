@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "name": "Áo Sơn Tùng OMT",
+        "image": "https://i.pinimg.com/236x/91/eb/b0/91ebb02972bd04078fab32408d117907--html.jpg",
+        "price": 1000,
+        "status": true,
+        "category_id": 1
+    }
+]
